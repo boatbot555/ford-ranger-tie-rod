@@ -8,13 +8,20 @@ Custom tie rod assembly for a 2001 Ford Ranger, modeled in Blender.
 
 | Component | Spec |
 |-----------|------|
-| Tube | 1.20" OD x 0.120" wall DOM (drawn over mandrel) |
-| Tube ID | 0.960" |
+| Tube | 1.25" OD x 0.120" wall DOM (drawn over mandrel) |
+| Tube ID | 1.010" |
 | Approximate length | 22" center-to-center |
-| Inserts | 1.5" weld-in, bored 3/4" for heim thread |
+| Inserts | 1.5" weld-in, turned to ~1.008" OD slip fit, 1/8" flush shoulder |
 | Thread | 3/4-16 (RH one end, LH other for adjustment) |
 | Tie rod ends | 3/4-16 heim joints |
-| Jam nuts | Hex, both ends |
+| Jam nuts | 1-1/8" hex, both ends |
+
+## Design
+
+- **1.25" DOM tube** chosen for clean insert geometry -- the 1.01" bore accepts inserts that transition smoothly to the 3/4" heim shank without a visible step-down
+- **Weld-in inserts** with a flush shoulder at the tube face, fillet welded
+- **Heim joints** thread into inserts, acting as tie rod ends with spherical bearing for misalignment
+- **LH/RH threading** allows toe adjustment by rotating the tube without disconnecting
 
 ## Files
 
@@ -27,9 +34,3 @@ Custom tie rod assembly for a 2001 Ford Ranger, modeled in Blender.
 ```bash
 blender --background --python build_tie_rod.py
 ```
-
-## Notes
-
-- One insert is left-hand thread, the other right-hand — allows toe adjustment by rotating the tube
-- Weld beads modeled at tube-insert junctions
-- Heim joint eyes are oriented vertically for bolt-through mounting
